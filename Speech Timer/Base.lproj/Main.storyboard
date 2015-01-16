@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ud-iA-WSy">
-                                <rect key="frame" x="255" y="446" width="90" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ud-iA-WSy">
+                                <rect key="frame" x="255" y="278" width="90" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="m3X-2D-O8T"/>
                                 </constraints>
@@ -40,8 +40,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xp7-eX-AKz">
-                                <rect key="frame" x="255" y="408" width="90" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xp7-eX-AKz">
+                                <rect key="frame" x="255" y="240" width="90" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="d5f-fW-Xfe"/>
                                     <constraint firstAttribute="height" constant="30" id="pcl-AA-wgS"/>
@@ -63,9 +63,10 @@
                             <constraint firstItem="PKo-b1-gcW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NSl-S7-muZ"/>
                             <constraint firstItem="xp7-eX-AKz" firstAttribute="leading" secondItem="8Ud-iA-WSy" secondAttribute="leading" id="Uf2-ew-8WN"/>
                             <constraint firstItem="8Ud-iA-WSy" firstAttribute="trailing" secondItem="xp7-eX-AKz" secondAttribute="trailing" id="Uvw-ZX-5Oc"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Ud-iA-WSy" secondAttribute="bottom" constant="124" id="a3x-iU-udM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8Ud-iA-WSy" secondAttribute="bottom" priority="750" constant="100" id="a3x-iU-udM"/>
                             <constraint firstItem="PKo-b1-gcW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="d5z-ND-tsK"/>
                             <constraint firstAttribute="centerX" secondItem="PKo-b1-gcW" secondAttribute="centerX" id="mda-cp-DJD"/>
+                            <constraint firstItem="xp7-eX-AKz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PKo-b1-gcW" secondAttribute="bottom" constant="20" id="vTI-Sf-HtA"/>
                         </constraints>
                     </view>
                     <connections>
