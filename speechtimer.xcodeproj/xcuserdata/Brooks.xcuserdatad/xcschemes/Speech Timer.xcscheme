@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "98D1591D1A685A1000E3361F"
-               BuildableName = "Speech Timer.app"
-               BlueprintName = "Speech Timer"
-               ReferencedContainer = "container:Speech Timer.xcodeproj">
+               BuildableName = "speechtimer.app"
+               BlueprintName = "speechtimer"
+               ReferencedContainer = "container:speechtimer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "98D159321A685A1000E3361F"
-               BuildableName = "Speech TimerTests.xctest"
-               BlueprintName = "Speech TimerTests"
-               ReferencedContainer = "container:Speech Timer.xcodeproj">
+               BuildableName = "speechtimerTests.xctest"
+               BlueprintName = "speechtimerTests"
+               ReferencedContainer = "container:speechtimer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "98D159321A685A1000E3361F"
-               BuildableName = "Speech TimerTests.xctest"
-               BlueprintName = "Speech TimerTests"
-               ReferencedContainer = "container:Speech Timer.xcodeproj">
+               BuildableName = "speechtimerTests.xctest"
+               BlueprintName = "speechtimerTests"
+               ReferencedContainer = "container:speechtimer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "98D1591D1A685A1000E3361F"
-            BuildableName = "Speech Timer.app"
-            BlueprintName = "Speech Timer"
-            ReferencedContainer = "container:Speech Timer.xcodeproj">
+            BuildableName = "speechtimer.app"
+            BlueprintName = "speechtimer"
+            ReferencedContainer = "container:speechtimer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "98D1591D1A685A1000E3361F"
-            BuildableName = "Speech Timer.app"
-            BlueprintName = "Speech Timer"
-            ReferencedContainer = "container:Speech Timer.xcodeproj">
+            BuildableName = "speechtimer.app"
+            BlueprintName = "speechtimer"
+            ReferencedContainer = "container:speechtimer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "98D1591D1A685A1000E3361F"
-            BuildableName = "Speech Timer.app"
-            BlueprintName = "Speech Timer"
-            ReferencedContainer = "container:Speech Timer.xcodeproj">
+            BuildableName = "speechtimer.app"
+            BlueprintName = "speechtimer"
+            ReferencedContainer = "container:speechtimer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

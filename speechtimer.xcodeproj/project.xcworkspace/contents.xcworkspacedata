@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Speech Timer.xcodeproj">
+      location = "self:speechtimer.xcodeproj">
    </FileRef>
 </Workspace>

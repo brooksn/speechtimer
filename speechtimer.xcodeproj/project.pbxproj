@@ -28,14 +28,14 @@
 
 /* Begin PBXFileReference section */
 		983F0DD61A688DD3002E01C0 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		98D1591E1A685A1000E3361F /* Speech Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Speech Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D1591E1A685A1000E3361F /* speechtimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = speechtimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D159221A685A1000E3361F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98D159231A685A1000E3361F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98D159251A685A1000E3361F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98D159281A685A1000E3361F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98D1592A1A685A1000E3361F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		98D1592D1A685A1000E3361F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		98D159331A685A1000E3361F /* Speech TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Speech TimerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D159331A685A1000E3361F /* speechtimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = speechtimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D159381A685A1000E3361F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98D159391A685A1000E3361F /* Speech_TimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speech_TimerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,8 +71,8 @@
 		98D1591F1A685A1000E3361F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				98D1591E1A685A1000E3361F /* Speech Timer.app */,
-				98D159331A685A1000E3361F /* Speech TimerTests.xctest */,
+				98D1591E1A685A1000E3361F /* speechtimer.app */,
+				98D159331A685A1000E3361F /* speechtimerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,9 +118,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		98D1591D1A685A1000E3361F /* Speech Timer */ = {
+		98D1591D1A685A1000E3361F /* speechtimer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98D1593D1A685A1000E3361F /* Build configuration list for PBXNativeTarget "Speech Timer" */;
+			buildConfigurationList = 98D1593D1A685A1000E3361F /* Build configuration list for PBXNativeTarget "speechtimer" */;
 			buildPhases = (
 				98D1591A1A685A1000E3361F /* Sources */,
 				98D1591B1A685A1000E3361F /* Frameworks */,
@@ -130,14 +130,14 @@
 			);
 			dependencies = (
 			);
-			name = "Speech Timer";
+			name = speechtimer;
 			productName = "Speech Timer";
-			productReference = 98D1591E1A685A1000E3361F /* Speech Timer.app */;
+			productReference = 98D1591E1A685A1000E3361F /* speechtimer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		98D159321A685A1000E3361F /* Speech TimerTests */ = {
+		98D159321A685A1000E3361F /* speechtimerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98D159401A685A1000E3361F /* Build configuration list for PBXNativeTarget "Speech TimerTests" */;
+			buildConfigurationList = 98D159401A685A1000E3361F /* Build configuration list for PBXNativeTarget "speechtimerTests" */;
 			buildPhases = (
 				98D1592F1A685A1000E3361F /* Sources */,
 				98D159301A685A1000E3361F /* Frameworks */,
@@ -148,9 +148,9 @@
 			dependencies = (
 				98D159351A685A1000E3361F /* PBXTargetDependency */,
 			);
-			name = "Speech TimerTests";
+			name = speechtimerTests;
 			productName = "Speech TimerTests";
-			productReference = 98D159331A685A1000E3361F /* Speech TimerTests.xctest */;
+			productReference = 98D159331A685A1000E3361F /* speechtimerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -164,6 +164,7 @@
 				TargetAttributes = {
 					98D1591D1A685A1000E3361F = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 3WFP8LB4P5;
 					};
 					98D159321A685A1000E3361F = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -171,7 +172,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 98D159191A685A1000E3361F /* Build configuration list for PBXProject "Speech Timer" */;
+			buildConfigurationList = 98D159191A685A1000E3361F /* Build configuration list for PBXProject "speechtimer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -184,8 +185,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				98D1591D1A685A1000E3361F /* Speech Timer */,
-				98D159321A685A1000E3361F /* Speech TimerTests */,
+				98D1591D1A685A1000E3361F /* speechtimer */,
+				98D159321A685A1000E3361F /* speechtimerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,7 +235,7 @@
 /* Begin PBXTargetDependency section */
 		98D159351A685A1000E3361F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 98D1591D1A685A1000E3361F /* Speech Timer */;
+			target = 98D1591D1A685A1000E3361F /* speechtimer */;
 			targetProxy = 98D159341A685A1000E3361F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -342,10 +343,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Speech Timer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = speechtimer;
 			};
 			name = Debug;
 		};
@@ -353,10 +355,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Speech Timer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = speechtimer;
 			};
 			name = Release;
 		};
@@ -374,7 +377,7 @@
 				);
 				INFOPLIST_FILE = "Speech TimerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = speechtimerTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Speech Timer.app/Speech Timer";
 			};
 			name = Debug;
@@ -389,7 +392,7 @@
 				);
 				INFOPLIST_FILE = "Speech TimerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = speechtimerTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Speech Timer.app/Speech Timer";
 			};
 			name = Release;
@@ -397,7 +400,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		98D159191A685A1000E3361F /* Build configuration list for PBXProject "Speech Timer" */ = {
+		98D159191A685A1000E3361F /* Build configuration list for PBXProject "speechtimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98D1593B1A685A1000E3361F /* Debug */,
@@ -406,7 +409,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98D1593D1A685A1000E3361F /* Build configuration list for PBXNativeTarget "Speech Timer" */ = {
+		98D1593D1A685A1000E3361F /* Build configuration list for PBXNativeTarget "speechtimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98D1593E1A685A1000E3361F /* Debug */,
@@ -415,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98D159401A685A1000E3361F /* Build configuration list for PBXNativeTarget "Speech TimerTests" */ = {
+		98D159401A685A1000E3361F /* Build configuration list for PBXNativeTarget "speechtimerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98D159411A685A1000E3361F /* Debug */,
