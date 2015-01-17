@@ -13,10 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var countdown: UILabel!
     @IBOutlet weak var startbtn: UIButton!
     @IBOutlet weak var resetbtn: UIButton!
-    var minutes: Int = 14
-    var warning: Int = 4
-    var stayawake = false
-    var completionmessage:String? = nil
+    //var minutes: Int = 14
+    //var warning: Int = 4
+    //var stayawake = false
+    //var completionmessage:String? = nil
     var timer: NSTimer? = nil
     var started:NSDate? = nil
     
@@ -24,21 +24,43 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let appDefaults = NSUserDefaults.standardUserDefaults()
-        stayawake = appDefaults.boolForKey("stayawake_preference") ?? false
-        completionmessage = appDefaults.stringForKey("completionmessage_preference")
-        minutes = appDefaults.stringForKey("minutes_preference")?.toInt() ?? 14
-        warning = appDefaults.stringForKey("warning_preference")?.toInt() ?? 4
+        //stayawake = appDefaults.boolForKey("stayawake_preference") ?? false
+        //completionmessage = appDefaults.stringForKey("completionmessage_preference")
+        //minutes = appDefaults.stringForKey("minutes_preference")?.toInt() ?? 14
+        //warning = appDefaults.stringForKey("warning_preference")?.toInt() ?? 4
         startbtn.enabled = true
         countdown.text = "\(minutes):00"
+        /*
         if completionmessage != nil && completionmessage == "" {
             completionmessage = nil
         }
+        */
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    var stayawake:Bool {
+        return NSUserDefaults.standardUserDefaults().boolForKey("stayawake_preference") ?? false
+    }
+    
+    var minutes:Int {
+        return NSUserDefaults.standardUserDefaults().stringForKey("minutes_preference")?.toInt() ?? 14
+    }
+    
+    var warning:Int {
+        return NSUserDefaults.standardUserDefaults().stringForKey("warning_preference")?.toInt() ?? 4
+    }
+    
+    var completionmessage:String? {
+        if NSUserDefaults.standardUserDefaults().stringForKey("completionmessage_preference") != nil && NSUserDefaults.standardUserDefaults().stringForKey("completionmessage_preference") == "" {
+            return nil
+        } else {
+            return NSUserDefaults.standardUserDefaults().stringForKey("completionmessage_preference")
+        }
     }
     
     func countDown(){
