@@ -3,13 +3,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Speech_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="speechtimer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,11 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ud-iA-WSy">
-                                <rect key="frame" x="255" y="278" width="90" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="m3X-2D-O8T"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="PKo-b1-gcW">
+                                <rect key="frame" x="16" y="200" width="568" height="200"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="240"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ud-iA-WSy">
+                                <rect key="frame" x="313" y="562" width="90" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Reset">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,21 +33,8 @@
                                     <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QS8-C1-I2Y"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="40" translatesAutoresizingMaskIntoConstraints="NO" id="PKo-b1-gcW">
-                                <rect key="frame" x="16" y="28" width="568" height="192"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="CTN-03-35k"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="100"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xp7-eX-AKz">
-                                <rect key="frame" x="255" y="240" width="90" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="d5f-fW-Xfe"/>
-                                    <constraint firstAttribute="height" constant="30" id="pcl-AA-wgS"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xp7-eX-AKz">
+                                <rect key="frame" x="198" y="562" width="90" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Start">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -54,30 +43,78 @@
                                     <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LU4-ua-XtN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" alpha="0.64999999999999969" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErT-Sr-mwT">
+                                <rect key="frame" x="268" y="349" width="65" height="65"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Button" image="omastopwatchbw">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopwatchButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zqp-xD-wVs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PKo-b1-gcW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2KH-3P-eyJ"/>
-                            <constraint firstItem="8Ud-iA-WSy" firstAttribute="top" secondItem="xp7-eX-AKz" secondAttribute="bottom" constant="8" id="FFS-mp-xDu"/>
-                            <constraint firstAttribute="centerX" secondItem="8Ud-iA-WSy" secondAttribute="centerX" id="I4i-K7-qGQ"/>
-                            <constraint firstItem="PKo-b1-gcW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NSl-S7-muZ"/>
-                            <constraint firstItem="xp7-eX-AKz" firstAttribute="leading" secondItem="8Ud-iA-WSy" secondAttribute="leading" id="Uf2-ew-8WN"/>
-                            <constraint firstItem="8Ud-iA-WSy" firstAttribute="trailing" secondItem="xp7-eX-AKz" secondAttribute="trailing" id="Uvw-ZX-5Oc"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8Ud-iA-WSy" secondAttribute="bottom" priority="750" constant="100" id="a3x-iU-udM"/>
-                            <constraint firstItem="PKo-b1-gcW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="d5z-ND-tsK"/>
-                            <constraint firstAttribute="centerX" secondItem="PKo-b1-gcW" secondAttribute="centerX" id="mda-cp-DJD"/>
-                            <constraint firstItem="xp7-eX-AKz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PKo-b1-gcW" secondAttribute="bottom" constant="20" id="vTI-Sf-HtA"/>
+                            <constraint firstAttribute="centerX" secondItem="PKo-b1-gcW" secondAttribute="centerX" id="35b-Ln-YhA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Ud-iA-WSy" secondAttribute="bottom" constant="8" id="D6G-9x-nEm"/>
+                            <constraint firstAttribute="centerX" secondItem="xp7-eX-AKz" secondAttribute="centerX" constant="57" id="atq-GI-nzY"/>
+                            <constraint firstItem="8Ud-iA-WSy" firstAttribute="leading" secondItem="xp7-eX-AKz" secondAttribute="trailing" constant="25" id="hzT-FX-7gP"/>
+                            <constraint firstAttribute="centerY" secondItem="PKo-b1-gcW" secondAttribute="centerY" id="mru-7U-5aF"/>
+                            <constraint firstAttribute="width" secondItem="PKo-b1-gcW" secondAttribute="width" id="syZ-70-QwP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xp7-eX-AKz" secondAttribute="bottom" constant="8" id="yUT-qJ-cAw"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ErT-Sr-mwT"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="countdown" destination="PKo-b1-gcW" id="l2d-RO-lvI"/>
                         <outlet property="resetbtn" destination="8Ud-iA-WSy" id="ZBw-8o-ECc"/>
                         <outlet property="startbtn" destination="xp7-eX-AKz" id="0Qi-SO-hh3"/>
+                        <segue destination="VmS-dR-PgQ" kind="presentation" identifier="modaltimer" id="jeJ-7h-52O"/>
+                        <segue destination="VmS-dR-PgQ" kind="popoverPresentation" identifier="popovertimer" popoverAnchorView="ErT-Sr-mwT" id="CCP-2w-OGs">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="418" y="258"/>
+            <point key="canvasLocation" x="323" y="348"/>
+        </scene>
+        <!--Time Selector View Controller-->
+        <scene sceneID="W0g-vB-rBD">
+            <objects>
+                <viewController id="VmS-dR-PgQ" customClass="TimeSelectorViewController" customModule="speechtimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sb4-Q2-Vnp"/>
+                        <viewControllerLayoutGuide type="bottom" id="XVH-5m-ADx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gTs-L1-4Ll">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tSF-Zm-yKy">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="162"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="timepicker" destination="tSF-Zm-yKy" id="M5O-Jp-fGx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="19S-2d-TMo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986" y="348"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="omastopwatchbw" width="1024" height="1024"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="CCP-2w-OGs"/>
+    </inferredMetricsTieBreakers>
 </document>

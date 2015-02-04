@@ -8,6 +8,26 @@
 
 import UIKit
 
+extension String {
+    mutating func deleteCharactersInRange(range: NSRange) {
+        let startIndex = advance(self.startIndex, range.location)
+        let length = range.length
+        self.removeRange(Range<String.Index>(start: startIndex, end:advance(startIndex, length)))
+    }
+    var length:Int {
+        return countElements(self)
+    }
+    func stringInRange(range: NSRange)->String {
+        let startIndex = advance(self.startIndex, range.location)
+        let length = range.length
+        if range.location + range.length > self.length {
+            return self.substringWithRange(Range<String.Index>(start: startIndex, end:advance(startIndex, self.length-range.location)))
+        } else {
+            return self.substringWithRange(Range<String.Index>(start: startIndex, end:advance(startIndex, length)))
+        }
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

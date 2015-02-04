@@ -90,6 +90,9 @@ class ViewController: UIViewController {
         
         resetbtn.enabled = false
     }
+    func childMessage(message:String){
+        println(message)
+    }
     
     @IBAction func startButtonPressed(sender: UIButton) {
         resetbtn.enabled = true
@@ -103,6 +106,15 @@ class ViewController: UIViewController {
     @IBAction func resetButtonPressed(sender: UIButton) {
         resetTimer(nil)
     }
-    
+    @IBAction func stopwatchButtonPressed(sender: UIButton) {
+        if UIDevice.currentDevice().model.stringInRange(NSRange(location: 0, length: 4)) == "iPad" {
+            //println("it's an ipad!")
+            self.performSegueWithIdentifier("popovertimer", sender: self)
+        } else if UIDevice.currentDevice().model.stringInRange(NSRange(location: 0, length: 6)) == "iPhone" {
+            //println("it's an iphone!")
+            self.performSegueWithIdentifier("modaltimer", sender: self)
+        }
+    }
+
 }
 

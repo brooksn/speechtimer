@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		983F0DD71A688DD3002E01C0 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 983F0DD61A688DD3002E01C0 /* Settings.bundle */; };
+		98CAB8BD1A6DA8650094FF98 /* TimeSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAB8BC1A6DA8650094FF98 /* TimeSelectorViewController.swift */; };
+		98CAB8BF1A6FA55B0094FF98 /* TimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CAB8BE1A6FA55B0094FF98 /* TimePickerView.swift */; };
 		98D159241A685A1000E3361F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D159231A685A1000E3361F /* AppDelegate.swift */; };
 		98D159261A685A1000E3361F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D159251A685A1000E3361F /* ViewController.swift */; };
 		98D159291A685A1000E3361F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98D159271A685A1000E3361F /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		983F0DD61A688DD3002E01C0 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		98CAB8BC1A6DA8650094FF98 /* TimeSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSelectorViewController.swift; sourceTree = "<group>"; };
+		98CAB8BE1A6FA55B0094FF98 /* TimePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePickerView.swift; sourceTree = "<group>"; };
 		98D1591E1A685A1000E3361F /* speechtimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = speechtimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D159221A685A1000E3361F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98D159231A685A1000E3361F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 				98D1592A1A685A1000E3361F /* Images.xcassets */,
 				98D1592C1A685A1000E3361F /* LaunchScreen.xib */,
 				98D159211A685A1000E3361F /* Supporting Files */,
+				98CAB8BC1A6DA8650094FF98 /* TimeSelectorViewController.swift */,
+				98CAB8BE1A6FA55B0094FF98 /* TimePickerView.swift */,
 			);
 			path = "Speech Timer";
 			sourceTree = "<group>";
@@ -218,7 +224,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				98D159261A685A1000E3361F /* ViewController.swift in Sources */,
+				98CAB8BD1A6DA8650094FF98 /* TimeSelectorViewController.swift in Sources */,
 				98D159241A685A1000E3361F /* AppDelegate.swift in Sources */,
+				98CAB8BF1A6FA55B0094FF98 /* TimePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Speech Timer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -355,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Speech Timer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
